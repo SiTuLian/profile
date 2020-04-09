@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./iconfont.css">
+  <link rel="stylesheet" href="./noramlize.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>前端开发工程师</title>
+</head>
+<body>
+  <header class="header-flex">
+    <h1>陈斌——前端开发工程师</h1>
+  </header>
+  <main>
+    <h3 class="main-h3">基本资料</h3>
+    <hr class="main-hr"/>
+    <div class="profile">
+      <div class="profile-item border-right">
+        <ul>
+          <li>姓名: 陈斌</li>
+          <li>年龄：23</li>
+          <li>手机号码：15013308401</li>
+          <li>邮箱：1340901207@qq.com</li>
+        </ul>
+      </div>
+      <div class="profile-item">
+        <ul>
+          <li>求职意向: web前端开发工程</li>
+          <li>学历：大专</li>
+          <li>学校：广州城市职业学院</li>
+          <li>专业：计算机应用</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="main-h3">教育背景</h3>
+    <hr class="main-hr"/>
+    <div class="jiaoyu">
+      <div class="div">
+        <p>2017.9-2020.6</p>
+        <p>广州城市职业学院</p>
+        <p>计算机应用</p>
+      </div>
+      <h4>学校课程</h4>
+      <p class="jiaoyu-p">前端设计，前端交互，移动端开发，H5游戏开发，Java，C语言，数据库，办公室软件操作，网络基础，产品设计，PS平面设计 </p>
+      <h4>参与活动</h4>
+      <p class="jiaoyu-p">学院科技节，获三等奖；校企合作项目人力测评手游</p>
+    </div>
+    <h3 class="main-h3">个人技能</h3>
+    <hr class="main-hr"/>
+    <div class="jineng">
+      <ul>
+        <li>H5，CSS3：熟练使用flex布局，响应式布局，语义化标签</li>
+        <li>JavaScript：熟练ES5,，ES6,语法，面向对象开发，JS超集TypeScript</li>
+        <li>Vue：熟练使用Vue全家桶，开发vue项目，熟悉前后端分离开发</li>
+        <li>熟悉微信小程序开发，了解云开发，云数据库，云调用等</li>
+        <li>MySQL：掌握增删改查，储存过程</li>
+        <li>nodejs：了解express框架，快速搭建服务器，数据接口。</li>
+        <li>CSS预编译：LESS</li>
+        <li>框架与UI库：Jquery，better-scroll，bootstrap，element-ui，vant</li>
+        <li>其他：git，webpack，linux系统操作。</li>
+        <li>博客地址：<a href="https://www.cnblogs.com/tourey-fatty/" target="_black">https://www.cnblogs.com/tourey-fatty/</a></li>
+      </ul>
+    </div>
+    <h3 class="main-h3">项目经验</h3>
+    <hr class="main-hr"/>
+    <div class="project">
+      <h4>二次元交流平台</h4>
+      <ul>
+        <li>项目概述: 前端使用vue，vant，后台使用node，express，主要功能为注册与登录，上传动漫资料、歌曲文件，播放音乐，论坛讨论，
+          个人管理，用于广大宅友交流二次元文化的平台。</li>
+        <li>主要职责：设计，前端，后端 </li>
+        <li>网址：<a href="http://123.57.90.190:3000/dist/index.html" target="_black">http://123.57.90.190:3000/dist/index.html</a></li>
+        <li> 相关功能实现：
+          <ul class="inner-ul">
+            <li>注册，由于手机短信验证需要支付费用，所以采用传统的注册方式，通过填写表单提交到服务端，密码加密，xss预防后，写入数据库。</li>
+            <li>登录， 拥有在忘记密码重设密码以及忘记用户名获取用户名的方式，登录依然是表单提交，再对比数据库的数据，正确则登录成功。</li>
+            <li>忘记用户名：利用qq邮箱提供的功能，以及相关模块向用户的邮箱发送验证码，验证正确则给出用户名。</li>
+            <li>忘记密码：依然是向邮箱发送验证码，不过需要验证码和用户名都正确的情况下才能重设密码。</li>
+            <li>上传功能：采用模块multer制作中间件上传文件，模块path修改文件名，其中前端上传文件时axios要自行添加响应头</li>
+            <li>论坛讨论：表单提交数据给服务端，服务端操控数据完成相关操作</li>
+            <li>数据展示：axios访问后台路由，后台返回相应数据，前端再对数据进行操作，最终展示。</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>微信小程序——云音乐</h4>
+      <p>由于还是体验版，如果想浏览，请加我微信，我拉近成员管理</p>
+      <div class="project-img-box">
+        <div class="img-box">
+          <img src="./img.jpg" alt="">
+        </div>
+        <p>微信扫码</p>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
